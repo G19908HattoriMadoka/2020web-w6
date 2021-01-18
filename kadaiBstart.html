@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
+  <meta charset="Shift JIS">
   <title>JavaScript Practice</title>
   <style>
     body {
@@ -42,10 +42,10 @@
       
       div.addEventListener('click', () => {
         if (i === winner) {
-          div.textContent = 'Win!';
+          div.textContent = '大吉!';
           div.classList.add('win');
         } else {
-          div.textContent = 'Lose!';
+          div.textContent = '凶!';
           div.classList.add('lose');
         }
       });

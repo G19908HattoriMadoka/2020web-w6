@@ -44,9 +44,8 @@
 
     const num = 10;
     const win = Math.floor(Math.random() * num); // 0 - 4
-    /*const daiwin = 7;
     const chuwin = 5;
-    const syowin = 20;*/
+    const syowin = 10;
 
     for (let i = 0; i < num; i++) {
       const div = document.createElement('div');
@@ -56,15 +55,15 @@
         if (i === win) {
           div.textContent = '大吉!';
           div.classList.add('daikichi');
-        } else /*if (win===chuwin)  */{
+        } else if (i === chuwin)  {
           div.textContent = '中吉!';
           div.classList.add('chukichi');
-        }/* else if (win===syowin) {
+        } else if (i === syowin) {
           div.textContent = '小吉!';
           div.classList.add('syokichi');
         } else {
           div.textContent = '凶';
-          div.classList.add('kyo');*/
+          div.classList.add('kyo');
       });
 
       document.body.appendChild(div);

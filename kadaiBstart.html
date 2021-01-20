@@ -58,12 +58,13 @@
         } else if (i === chuwin)  {
           div.textContent = '中吉!';
           div.classList.add('chukichi');
-        } else if (i === syowin) {
+        } /*else if (i === syowin) {
           div.textContent = '小吉!';
           div.classList.add('syokichi');
-        } else {
+        }*/ else {
           div.textContent = '凶';
           div.classList.add('kyo');
+        }
       });
 
       document.body.appendChild(div);

@@ -44,7 +44,7 @@
 
     const num = 10;
     const win = Math.floor(Math.random() * num); // 0 - 4
-    const chuwin = 5;
+    const chuwin = Math.floor(Math.random() * num);
     const syowin = 10;
 
     for (let i = 0; i < num; i++) {
@@ -55,7 +55,7 @@
         if (i === win) {
           div.textContent = '大吉!';
           div.classList.add('daikichi');
-        } else if (i === chuwin)  {
+        } else if (i === chuwin && != win)  {
           div.textContent = '中吉!';
           div.classList.add('chukichi');
         } /*else if (i === syowin) {

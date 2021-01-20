@@ -42,30 +42,30 @@
   <script>
     'use strict';
 
-    const num = 20;
+    const num = 10;
     const win = Math.floor(Math.random() * num); // 0 - 4
-    const daiwin = 7;
+    /*const daiwin = 7;
     const chuwin = 5;
-    const syowin = 20;
+    const syowin = 20;*/
 
-    //for (let i = 0; i < num; i++) {
+    for (let i = 0; i < num; i++) {
       const div = document.createElement('div');
       div.classList.add('box');
       
       div.addEventListener('click', () => {
-        if (win === daiwin) {
+        if (i === win) {
           div.textContent = '大吉!';
           div.classList.add('daikichi');
-        } else if (win===chuwin)  {
+        } else /*if (win===chuwin)  */{
           div.textContent = '中吉!';
           div.classList.add('chukichi');
-        } else if (win===syowin) {
+        /*} else if (win===syowin) {
           div.textContent = '小吉!';
           div.classList.add('syokichi');
         } else {
           div.textContent = '凶';
-          div.classList.add('kyo');
-      //}
+          div.classList.add('kyo');*/
+      }
         );
 
       document.body.appendChild(div);
